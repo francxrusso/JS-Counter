@@ -16,5 +16,4 @@ Per scelta, il counter non può assumere valori negativi.
 ☁︎ JavaScript Vanilla<br>
 
 # Link al progetto
-<a href="https://francxrusso.github.io/JS-Counter/">Guarda il progetto live</a>
-
+<a href="https://francxrusso.github.io/JS-Counter/">Prova il counter</a>
