@@ -11,9 +11,9 @@ Oltre ai bottoni +/- è presente un bottone "reset" che riporta il counter a 0.
 Per scelta, il counter non può assumere valori negativi, fermandosi a 0.
 
 # Costruito con
-☁︎ HTML
-☁︎ CSS
-☁︎ JavaScript Vanilla
+☁︎ HTML<br>
+☁︎ CSS<br>
+☁︎ JavaScript Vanilla<br>
 
 # Link al progetto
 
