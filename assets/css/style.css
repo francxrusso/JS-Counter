@@ -1,0 +1,118 @@
+:root {
+    --dark-green: #015757;
+    --accent-green: #05CE91;
+    --light-gray: #E1E1E1;
+    --dark-gray: #686868;
+    --black: #212121;
+    --transparent: rgba(255, 255, 255, 0);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+    border-style: none;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--dark-green);
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p {
+    color: var(--light-gray);
+    font-weight: 300;
+    font-size: 14px;
+    max-width: 360px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.logo {
+    max-width: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+img{
+    z-index:0;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.footer {
+    color: #e1e1e175;
+    font-weight: lighter;
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.container {
+    background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(197,217,227,1) 100%);
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#box .counter {
+    color: var(--dark-green);
+    text-align: center;
+    font-size: 40px;
+}
+
+#box .plus {
+    background-color: var(--accent-green);
+    color: var(--dark-green);
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin:0px 10px;
+    font-size: 30px;
+}
+
+#box .minus {
+    background-color: var(--accent-green);
+    color: var(--dark-green);
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 4px;
+    margin:0px 10px;
+    font-size: 30px;
+}
+
+#box .reset {
+    background-color: #05ce921c;
+    color: var(--accent-green);
+    font-weight: 600;
+    padding: 10px 20px 6px 20px;
+    border:1px solid var(--accent-green);
+    border-radius: 4px;
+    margin:0px 10px;
+    font-size: 27px;
+}
