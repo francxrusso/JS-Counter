@@ -81,3 +81,5 @@ function reset() {
 plusButton.addEventListener('click', plus);
 minusButton.addEventListener('click', minus);
 resetButton.addEventListener('click', reset);
+plusTenButton.addEventListener('click', plusTen);
+minusTenButton.addEventListener('click', minusTen);
