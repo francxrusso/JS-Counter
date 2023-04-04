@@ -71,7 +71,7 @@ function minusTen() {
     }
 }
 
-// extra
+// Funzione di reset
 function reset() {
     count = 0;
     counter.innerText = count;
