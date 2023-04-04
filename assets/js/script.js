@@ -47,12 +47,6 @@ function plus() {
     counter.innerText = count;
 }
 
-// Funzione aumenta di 10
-function plusTen() {
-    count += 10;
-    counter.innerText = count;
-}
-
 // Funzione diminuisci
 function minus() {
     if (count === 0) { 
@@ -61,6 +55,12 @@ function minus() {
         count--;
         counter.innerText = count;
     }
+}
+
+// Funzione aumenta di 10
+function plusTen() {
+    count += 10;
+    counter.innerText = count;
 }
 
 // Funzione diminuisci di 10
