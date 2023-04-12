@@ -1,4 +1,4 @@
-// Seleziono le div
+// Seleziono la div del contenitore
 const container = document.querySelector("#container");
 
 // Inizializzo il counter a 0
@@ -13,12 +13,17 @@ function setUpElement(typeElement, classElement, content, parentToAppend) {
   return myElement;
 }
 
-// Setto tutti gli elementi
+// Setto tutte le div
+const setMyNum = setUpElement("div", "num", "", container);
+const setMyBut = setUpElement("div", "but", "", container);
+const setMyTen = setUpElement("div", "ten", "", container);
 
-const containerNum = setUpElement("div", "num",'', container); //div contenente il counter
-const containerBut = setUpElement("div", "but", '', container); //div contenente i bottoni superiori
-const containerTen = setUpElement("div", "ten", '', container); //div contenente i bottoni inferiori
+// Seleziono le div per i bottoni
+const num = document.querySelector(".num");
+const but = document.querySelector(".but");
+const ten = document.querySelector(".ten");
 
+// Setto tutti i bottoni e i vari elementi del counter
 const counter = setUpElement("h2", "counter", count, num);
 const plusButton = setUpElement("button", "plus", "+", but);
 const resetButton = setUpElement("button", "reset", "↺", but);
