@@ -3,43 +3,25 @@ const but = document.querySelector('#but');
 const ten = document.querySelector('#ten');
 const num = document.querySelector('#num');
 
-// Creo i bottoni , il reset e il contatore
-const counter = document.createElement('h2');
-const plusButton = document.createElement('button');
-const resetButton = document.createElement('button');
-const minusButton = document.createElement('button');
-const minusTenButton = document.createElement('button');
-const plusTenButton = document.createElement('button');
-
-
 // Inizializzo il counter a 0
 let count = 0
 
-// Inserisco i placeholder negli elementi
-counter.innerText = count;
-plusButton.innerText = '+';
-resetButton.innerText = '↺';
-minusButton.innerText = '-';
-minusTenButton.innerText = '- 10';
-plusTenButton.innerText = '+ 10';
+// funzione per la creazione degli elementi
+function setUpElement(typeEl,classEl,content,parentToAppend){
+    let nameElem = document.createElement(typeEl)
+    nameElem.className = classEl
+    nameElem.innerHTML = content
+    parentToAppend.append(nameElem)
+    return nameElem
+}
 
-
-// Aggiungo classi agli elementi per CSS
-counter.className = 'counter';
-plusButton.className = 'plus';
-plusTenButton.className = 'plusTen';
-minusButton.className = 'minus';
-minusTenButton.className = 'minusTen';
-resetButton.className = 'reset';
-
-
-// Appendiamo gli elementi alle div
-num.appendChild(counter);
-but.appendChild(minusButton);
-but.appendChild(resetButton);
-but.appendChild(plusButton);
-ten.appendChild(plusTenButton);
-ten.appendChild(minusTenButton);
+// Creo i bottoni , il reset e il contatore
+const plusButton = setUpElement('button','plus','+',but);
+const minusButton = setUpElement('button','minus','-',but)
+const minusTenButton = setUpElement('button','minusTen','- 10',ten)
+const plusTenButton = setUpElement('button','plusTen','+ 10',ten)
+const resetButton = setUpElement('button','reset','↺',but)
+const counter = setUpElement('h2','counter',count,counter)
 
 // Funzione aumenta
 function plus() {
