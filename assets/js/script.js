@@ -15,7 +15,7 @@ function setUpElement(typeElement, classElement, content, parentToAppend) {
 
 // Setto tutti gli elementi
 
-const containerNum = setUpElement("div", "num", counter, container); //div contenente il counter
+const containerNum = setUpElement("div", "num",'', container); //div contenente il counter
 const containerBut = setUpElement("div", "but", '', container); //div contenente i bottoni superiori
 const containerTen = setUpElement("div", "ten", '', container); //div contenente i bottoni inferiori
 

@@ -81,19 +81,19 @@ img{
     z-index: 1;
 }
 
-#but{
+.but{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#num .counter {
+.num .counter {
     color: var(--dark-green);
     text-align: center;
     font-size: 40px;
 }
 
-#but .plus , .minus {
+.but .plus , .minus {
     background-color: var(--accent-green);
     color: var(--dark-green);
     font-weight: 600;
@@ -103,12 +103,12 @@ img{
     font-size: 30px;
 }
 
-#ten{
+.ten{
     display: flex;
     justify-content: center;
 }
 
-#ten .plusTen, .minusTen{
+.ten .plusTen, .minusTen{
     margin:20px 10px;
     background-color: var(--accent-green);
     color: var(--dark-green);
@@ -118,7 +118,7 @@ img{
     font-size: 25px;
 }
 
-#but .reset {
+.but .reset {
     background-color: #05ce921c;
     color: var(--accent-green);
     font-weight: 600;
