@@ -71,7 +71,7 @@ img{
     z-index: 0;
 }
 
-.container {
+#container {
     background: linear-gradient(184deg, rgba(255,255,255,1) 0%, rgba(197,217,227,1) 100%);
     border-radius: 4px;
     margin-top: 20px;
