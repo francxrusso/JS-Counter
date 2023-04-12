@@ -16,7 +16,7 @@ function setUpElement(typeEl,classEl,content,parentToAppend){
 }
 
 // Creo i bottoni , il reset e il contatore
-const counter = setUpElement('h2','counter',count,counter)
+const counter = setUpElement('h2','counter',count,num)
 const plusButton = setUpElement('button','plus','+',but);
 const resetButton = setUpElement('button','reset','↺',but)
 const minusButton = setUpElement('button','minus','-',but)
