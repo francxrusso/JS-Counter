@@ -70,11 +70,6 @@ function reset() {
 }
 
 // Event Listener sui bottoni
-plusButton.addEventListener("click", plus);
-resetButton.addEventListener("click", reset);
-minusButton.addEventListener("click", minus);
-plusTenButton.addEventListener("click", plusTen);
-minusTenButton.addEventListener("click", minusTen);
 
 container.addEventListener('click', (event) => {
   if(event.target.classElement === 'plus') {
