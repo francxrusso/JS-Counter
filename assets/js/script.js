@@ -70,9 +70,33 @@ function reset() {
 }
 
 // Event Listener sui bottoni
-plusButton.addEventListener("click", plus);
-resetButton.addEventListener("click", reset);
-minusButton.addEventListener("click", minus);
-plusTenButton.addEventListener("click", plusTen);
-minusTenButton.addEventListener("click", minusTen);
+container.addEventListener("click", function(event) {
+  const target = event.target;
+  
+  // Se il target è il pulsante di incremento, esegui la funzione plus()
+  if (target.matches('.plus')) {
+    console.log(plus())
+  }
+  
+  // Se il target è il pulsante di decremento, esegui la funzione minus()
+  if (target.matches('.minus')) {
+      console.log(minus())
+  }
+  
+  // Se il target è il pulsante di incremento di 10, esegui la funzione plusTen()
+  if (target.matches('.plusTen')) {
+    console.log(plusTen())
+  }
+  
+  // Se il target è il pulsante di decremento di 10, esegui la funzione minusTen()
+  if (target.matches('.minusTen')) {
+    console.log(minusTen())
+    }
+  
 
+  // Se il target è il pulsante di reset, esegui la funzione reset()
+  if (target.matches('.reset')) {
+    console.log(reset())
+  }
+}
+);
