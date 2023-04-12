@@ -7,15 +7,15 @@ const num = document.querySelector('#num');
 let count = 0
 
 // funzione per la creazione degli elementi
-function setUpElement(typeEl,classEl,content,parentToAppend){
-    let nameElem = document.createElement(typeEl)
-    nameElem.className = classEl
-    nameElem.innerHTML = content
-    parentToAppend.append(nameElem)
-    return nameElem
+function setUpElement(typeElement,classElement,content,parentToAppend){
+    let  myElement = document.createElement(typeElement)
+    myElement.className = classElement
+    myElement.innerHTML = content
+    parentToAppend.append(myElement)
+    return myElement
 }
 
-// Creo i bottoni , il reset e il contatore
+// Setto i bottoni , il reset e il contatore
 const counter = setUpElement('h2','counter',count,num)
 const plusButton = setUpElement('button','plus','+',but);
 const resetButton = setUpElement('button','reset','↺',but)
