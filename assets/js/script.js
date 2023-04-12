@@ -62,16 +62,12 @@ function reset() {
 }
 
 // Event Listener sui bottoni
-plusButton.addEventListener('click', plus);
-resetButton.addEventListener('click', reset);
-minusButton.addEventListener('click', minus);
-plusTenButton.addEventListener('click', plusTen);
-minusTenButton.addEventListener('click', minusTen);
+
 
 document.addEventListener('click', function(event) {
 
-    if (event.target.dataset.count != undefined) {
-      event.target.count++;
+    if (event.target.dataset.counter != undefined) {
+      event.target.counter++;
     }
 
   });
