@@ -16,12 +16,12 @@ function setUpElement(typeEl,classEl,content,parentToAppend){
 }
 
 // Creo i bottoni , il reset e il contatore
+const counter = setUpElement('h2','counter',count,counter)
 const plusButton = setUpElement('button','plus','+',but);
+const resetButton = setUpElement('button','reset','↺',but)
 const minusButton = setUpElement('button','minus','-',but)
 const minusTenButton = setUpElement('button','minusTen','- 10',ten)
 const plusTenButton = setUpElement('button','plusTen','+ 10',ten)
-const resetButton = setUpElement('button','reset','↺',but)
-const counter = setUpElement('h2','counter',count,counter)
 
 // Funzione aumenta
 function plus() {
@@ -63,7 +63,7 @@ function reset() {
 
 // Event Listener sui bottoni
 plusButton.addEventListener('click', plus);
-minusButton.addEventListener('click', minus);
 resetButton.addEventListener('click', reset);
+minusButton.addEventListener('click', minus);
 plusTenButton.addEventListener('click', plusTen);
 minusTenButton.addEventListener('click', minusTen);
