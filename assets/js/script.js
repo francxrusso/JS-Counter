@@ -70,17 +70,9 @@ function reset() {
 }
 
 // Event Listener sui bottoni
+plusButton.addEventListener("click", plus);
+resetButton.addEventListener("click", reset);
+minusButton.addEventListener("click", minus);
+plusTenButton.addEventListener("click", plusTen);
+minusTenButton.addEventListener("click", minusTen);
 
-container.addEventListener('click', (event) => {
-  if(event.target.classElement === 'plus') {
-    console.log(event.target.plus());
-  } else if(event.target.classElement === 'minus') {
-    console.log(event.target.minus());
-  } else if(event.target.classElement === 'reset') {
-    console.log(event.target.reset());
-} else if(event.target.classElement === 'minusTen') {
-  console.log(event.target.minusTen());
-} else if(event.target.classElement === 'plusTen') {
-  console.log(event.target.plusTen());
-}
-})
